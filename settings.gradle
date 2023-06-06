@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        gradlePluginPortal()
+        maven {
+            url 'https://dl.google.com/dl/android/maven2'
+        }
+    }
+    dependencies {
+        //noinspection GradlePluginVersion
+        classpath 'com.android.tools.build:gradle:3.1.2'
+    }
+    }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+
+    }
+
+}
+rootProject.name = "MySecondLib"
+include ':app'
+include ':mysecondlibrary'
+include ':mylibrary'
